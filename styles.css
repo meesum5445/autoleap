@@ -282,7 +282,6 @@
 }
 /* .................................................... */
 #cont2{
-    overflow:hidden;
     margin-top: 80px;
     display:flex;
     flex-direction: column;
@@ -298,19 +297,13 @@
     text-align: center;
 }
 #slidingpart{    
-    overflow: hidden;
     width: 100%;
     height: 300px;
     display: flex;  
     justify-content: space-between;
+    position: relative;
     overflow: hidden;
 }
-/* #animatedpart1{
-    transform: translateX(-100%);
-}
-#animatedpart2{
-    transform: translateX(100%);
-} */
 #slidingpart a{
     box-sizing: border-box;
     width: 10%;
@@ -329,7 +322,7 @@
     width: 960px;
     display :flex;
     position: absolute;
-    left:25%;
+    left:10%;
 }
 .animatedpart #image{
     box-sizing: border-box;
