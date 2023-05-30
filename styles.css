@@ -302,20 +302,26 @@
     display: flex;  
     justify-content: space-between;
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
-#slidingpart a{
+
+#slidingpart #leftarrow{
     box-sizing: border-box;
     width: 10%;
-}
-#slidingpart a img{
-    width: 100%;
-}
-#slidingpart #leftarrow{
     padding: 11% 6% 11% 0%;
 }
+#slidingpart #leftarrow img{
+    width: 100%;
+    cursor: pointer;
+}
 #slidingpart #rightarrow{
+    box-sizing: border-box;
+    width: 10%;
     padding: 11% 0% 11% 6%;
+}
+#slidingpart #rightarrow img{
+    width: 100%;
+    cursor: pointer;
 }
 .animatedpart{
     height: 300px;
@@ -323,6 +329,24 @@
     display :flex;
     position: absolute;
     left:10%;
+    background-color: #00c19d;
+    border: 2px solid red;
+}
+.animatedpart:hover{
+    transform: translateX(-112%);
+    transition-duration: 3s;
+}
+#animatedpart2{
+    left: 100%;
+}
+#animatedpart3{
+    left: 190%;
+}
+#animatedpart4{
+    left: 281%;
+}
+#animatedpart5{
+    left: 371.5%;
 }
 .animatedpart #image{
     box-sizing: border-box;
